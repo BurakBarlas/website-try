@@ -1,18 +1,27 @@
 import React from 'react';
 
 import './App.css';
+import Components from './components/components';
+
 
 function App() {
-  const title = "Burak Barlas";
+  // const title = "Burak Barlas";
 
   return (
 
     <div className="App">
+      {/* <div>
+        <h1>{title}</h1>
+      </div> */}
       
-    <h1>{title}</h1>
-    
-      <header className="App-header">
-          <div className="ClickIcons" >
+        
+      <div className="main-container">   
+        <header className="App-header">
+          <h1>About Me</h1>
+          <p>I am Burak barlas. I'm studying at Bahcesehir University in Istanbul. Yet, I'm beginning of my career. 
+            I am interested in learning new computer language, trying to improve myself by making new projects.</p>
+        </header>
+        <div className="ClickIcons" >
             <a
               className="Github"
               href="https://github.com/BurakBarlas"
@@ -48,13 +57,13 @@ function App() {
             >
             <i class="fas fa-file"></i>  
             </a> */}
-
           </div>
-
-          
-        
-      </header>
+      </div>
       
+      <div className="backGroundLayer">
+
+      </div>
+        
     </div>
   );
 }
