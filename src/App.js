@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 import Components from './components/components';
-
+import BackGroundImage from './Assets/BackGroundImage.jpeg';
 
 function App() {
   // const title = "Burak Barlas";
@@ -58,11 +58,13 @@ function App() {
             <i class="fas fa-file"></i>  
             </a> */}
           </div>
-      </div>
-      
-      <div className="backGroundLayer">
+          
+          <img className="background-image" src={BackGroundImage} alt="Bad Connection Huh!" />
+          
 
       </div>
+      
+      <div className="backGroundLayer"></div>
         
     </div>
   );

@@ -41,8 +41,8 @@
   font-size: 45px;  
   display: flex;
   flex-direction: column;
-  position: fixed;
-  margin-top: 9%;
+  /* position: fixed; */
+  margin-top: 15%;
   
 }
   
@@ -66,4 +66,10 @@ p {
 
 h1 {
   margin-left: 10%;
+}
+
+.background-image {
+  width: 400px;
+  height: 400px;
+  margin-left: 50%;
 }
