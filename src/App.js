@@ -3,6 +3,9 @@ import React from 'react';
 import './App.css';
 import Components from './components/components';
 import BackGroundImage from './Assets/BackGroundImage.jpeg';
+import FunctionClick from './components/FunctionClick';
+
+import ClassClick from './components/ClassClick';
 
 function App() {
   // const title = "Burak Barlas";
@@ -10,25 +13,43 @@ function App() {
   return (
 
     <div className="App">
-      {/* <div>
-        <h1>{title}</h1>
-      </div> */}
-      
         
-      <div className="main-container">   
+      <div className="main-container"> 
+
         <header className="App-header">
-          <h1>About Me</h1>
+          
+          <div className="page">
+            <h1>About Me</h1>
+          </div>
+
+          <div className="menu">
+            <h2>about me</h2>
+            <h2>projects</h2>
+          </div>
+          
+          {/* <FunctionClick/>
+          <ClassClick /> */}
+          
+        </header>
+
+        <div className="container">
+          
           <p>I am Burak barlas. I'm studying at Bahcesehir University in Istanbul. Yet, I'm beginning of my career. 
             I am interested in learning new computer language, trying to improve myself by making new projects.</p>
-        </header>
+
+          <img className="background-image" src={BackGroundImage} alt="Bad Connection Huh!" />
+
+        </div>
+
         <div className="ClickIcons" >
+
             <a
               className="Github"
               href="https://github.com/BurakBarlas"
               target="_blank"
               rel="noopener noreferrer"
             >
-            <i class="fab fa-github-square"></i>
+            <i className="fab fa-github-square"></i>
             </a>
               
             <a
@@ -37,7 +58,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
 
             <a
@@ -46,7 +67,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >  
-            <i class="fas fa-envelope-square"></i>
+            <i className="fas fa-envelope-square"></i>
             </a>
 
             {/* <a
@@ -57,11 +78,8 @@ function App() {
             >
             <i class="fas fa-file"></i>  
             </a> */}
-          </div>
+        </div>
           
-          <img className="background-image" src={BackGroundImage} alt="Bad Connection Huh!" />
-          
-
       </div>
       
       <div className="backGroundLayer"></div>
