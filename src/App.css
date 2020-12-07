@@ -3,8 +3,8 @@
   background-color: #DCDCDC;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   
   /* background-color: deepskyblue; */
 }
@@ -30,10 +30,16 @@
   height: 100%;
   opacity: 0.75;
 }
+
 .App-header {
-  margin-left: 7%;
-  margin-top: 4%;
+  display: flex;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-style: solid;
+  height: 90px;
+  width: 960px;
 }
+
 
 .ClickIcons {
   color :#282c34;
@@ -51,17 +57,22 @@
     line-height: 1rem;
 }
 
-.Container {
-  height: 10px;
-  width: 10px;
-  border-style: solid;
+.container {
+  display: flex;
+  height: 400px;
+  width: 950px;
+  margin-left: 25px;
 }
 
+.img {
+  float: right;
+}
 p {
   text-indent: 15%;
   text-align: justify;
   letter-spacing: 1px;
-  margin-right: 65%;
+  margin-right: 70px;
+  margin-left: 15px;
 }
 
 h1 {
@@ -69,7 +80,8 @@ h1 {
 }
 
 .background-image {
-  width: 400px;
-  height: 400px;
-  margin-left: 50%;
+  width: 500px;
+  height: 390px;
+  margin-right: 20px;
 }
+
