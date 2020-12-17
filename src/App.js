@@ -4,15 +4,17 @@ import './App.css';
 import Components from './components/components';
 import BackGroundImage from './Assets/BackGroundImage.jpeg';
 import FunctionClick from './components/FunctionClick';
-
+import { BrowserRouter as Router, Link, Route } from  'react-router-dom';
 import ClassClick from './components/ClassClick';
+import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
   // const title = "Burak Barlas";
 
   return (
-
-    <div className="App">
+    <Router>
+      <div className="App">
         
       <div className="main-container"> 
 
@@ -23,8 +25,12 @@ function App() {
           </div>
 
           <div className="menu">
-            <h2>about me</h2>
+            <Link to={'/about'} >
+              <h2>about me</h2>
+            </Link>
+            <Link to={'/projects'}>
             <h2>projects</h2>
+            </Link>
           </div>
           
           {/* <FunctionClick/>
@@ -33,12 +39,14 @@ function App() {
         </header>
 
         <div className="container">
-          
-          <p>I am Burak barlas. I'm studying at Bahcesehir University in Istanbul. Yet, I'm beginning of my career. 
-            I am interested in learning new computer language, trying to improve myself by making new projects.</p>
+        <Route path={['/about', "/"]} component={ About }/>
+        <Route path='/projects' component={ Projects }/>
 
-          <img className="background-image" src={BackGroundImage} alt="Bad Connection Huh!" />
+            {/* <p>I am Burak barlas. I'm studying at Bahcesehir University in Istanbul. Yet, I'm beginning of my career. 
+              I am interested in learning new computer language, trying to improve myself by making new projects.</p>
 
+            <img className="background-image" src={BackGroundImage} alt="Bad Connection Huh!" /> */}
+        
         </div>
 
         <div className="ClickIcons" >
@@ -85,6 +93,7 @@ function App() {
       <div className="backGroundLayer"></div>
         
     </div>
+    </Router>
   );
 }
 
